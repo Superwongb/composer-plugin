@@ -1,5 +1,5 @@
 <p align="center"><a href="https://www.uvdesk.com/en/" target="_blank">
-    <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.uvdesk.com/uvdesk/bundles/webkuldefault/images/uvdesk-wide.svg">
+    <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.uvdesk.com/jacobn/bundles/webkuldefault/images/uvdesk-wide.svg">
 </a></p>
 
 [UVDesk Package Manager][1] is a generic purpose [Composer][2] plugin to help developers auto-configure their packages and its dependencies with varying level of complexeties.
@@ -9,5 +9,5 @@
 
 [1]: https://www.uvdesk.com/
 [2]: https://getcomposer.org/
-[3]: https://github.com/uvdesk/community-skeleton
+[3]: https://github.com/jacobn/community-skeleton
 [4]: https://symfony.com/

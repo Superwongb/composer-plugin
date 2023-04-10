@@ -1,5 +1,5 @@
 {
-    "name": "uvdesk/composer-plugin",
+    "name": "jacobn/composer-plugin",
     "description": "Generic purpose composer plugin to auto-configure your packages",
     "type": "composer-plugin",
     "license": "MIT",
