@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\UVDesk\PackageManager;
+namespace Harryn\Jacobn\PackageManager;
 
 use Composer\Composer;
 use Composer\Script\Event;
@@ -13,9 +13,9 @@ use Composer\Package\PackageInterface;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Composer\DependencyResolver\Operation\UpdateOperation;
-use Webkul\UVDesk\PackageManager\Composer\ComposerPackageExtension;
-use Webkul\UVDesk\PackageManager\Event\ComposerPackageUpdatedEvent;
-use Webkul\UVDesk\PackageManager\Event\ComposerProjectCreatedEvent;
+use Harryn\Jacobn\PackageManager\Composer\ComposerPackageExtension;
+use Harryn\Jacobn\PackageManager\Event\ComposerPackageUpdatedEvent;
+use Harryn\Jacobn\PackageManager\Event\ComposerProjectCreatedEvent;
 
 class Manager implements PluginInterface, EventSubscriberInterface
 {

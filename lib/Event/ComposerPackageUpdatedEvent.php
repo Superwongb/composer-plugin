@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\UVDesk\PackageManager\Event;
+namespace Harryn\Jacobn\PackageManager\Event;
 
 use Composer\Script\Event as ComposerEvent;
 use Symfony\Contracts\EventDispatcher\Event;

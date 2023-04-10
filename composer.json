@@ -18,11 +18,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Webkul\\UVDesk\\PackageManager\\": "lib/"
+            "Harryn\\Jacobn\\PackageManager\\": "lib/"
         }
     },
     "extra": {
-        "class": "Webkul\\UVDesk\\PackageManager\\Manager",
+        "class": "Harryn\\Jacobn\\PackageManager\\Manager",
         "branch-alias": {
             "dev-master": "1.1.x-dev"
         }

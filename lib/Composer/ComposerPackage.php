@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\UVDesk\PackageManager\Composer;
+namespace Harryn\Jacobn\PackageManager\Composer;
 
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Console\Output\ConsoleOutput;
