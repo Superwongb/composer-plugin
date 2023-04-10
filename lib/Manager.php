@@ -27,7 +27,7 @@ class Manager implements PluginInterface, EventSubscriberInterface
     {
         if (!extension_loaded('openssl')) {
             self::$activated = false;
-            $io->writeError('<warning>UVDesk dependency resolver has been disabled. You must enable the openssl extension in your "php.ini" file.</warning>');
+            $io->writeError('<warning>jacobn dependency resolver has been disabled. You must enable the openssl extension in your "php.ini" file.</warning>');
 
             return;
         }
@@ -76,10 +76,10 @@ class Manager implements PluginInterface, EventSubscriberInterface
             $package = $packageOperation instanceof UpdateOperation ? $packageOperation->getTargetPackage() : $packageOperation->getPackage();
             $extras = $package->getExtra();
 
-            if (!empty($extras['uvdesk-package-extension']) && class_exists($extras['uvdesk-package-extension'])) {
+            if (!empty($extras['jacobn-package-extension']) && class_exists($extras['jacobn-package-extension'])) {
                 try {
                     $pathToPackage = $this->composer->getInstallationManager()->getInstallPath($package);
-                    $extensionPackage = new $extras['uvdesk-package-extension']($package, $packageOperation, $pathToPackage);
+                    $extensionPackage = new $extras['jacobn-package-extension']($package, $packageOperation, $pathToPackage);
                     
                     if ($extensionPackage instanceof ComposerPackageExtension) {
                         array_push($dependencies, $extensionPackage);
@@ -107,7 +107,7 @@ class Manager implements PluginInterface, EventSubscriberInterface
             $this->io->writeError(sprintf("\n<info>Package Manager: %s package operations</info>", count($packages)));
             
             foreach ($packages as $packageHandler) {
-                $dispatcher->addListener('uvdesk.composer.package.updated', [$packageHandler, 'handleComposerPackageUpdateEvent']);
+                $dispatcher->addListener('jacobn.composer.package.updated', [$packageHandler, 'handleComposerPackageUpdateEvent']);
             }
 
             $composerEvent = new ComposerPackageUpdatedEvent($event);
@@ -125,7 +125,7 @@ class Manager implements PluginInterface, EventSubscriberInterface
             $dispatcher = new EventDispatcher();
 
             foreach ($packages as $packageHandler) {
-                $dispatcher->addListener('uvdesk.composer.project.created', [$packageHandler, 'handleComposerProjectCreateEvent']);
+                $dispatcher->addListener('jacobn.composer.project.created', [$packageHandler, 'handleComposerProjectCreateEvent']);
             }
 
             $composerEvent = new ComposerProjectCreatedEvent($event);

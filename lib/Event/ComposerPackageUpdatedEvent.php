@@ -7,7 +7,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class ComposerPackageUpdatedEvent extends Event
 {
-    public const NAME = 'uvdesk.composer.package.updated';
+    public const NAME = 'jacobn.composer.package.updated';
 
     protected $event;
 

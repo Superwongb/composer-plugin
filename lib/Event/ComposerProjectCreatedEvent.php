@@ -7,7 +7,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class ComposerProjectCreatedEvent extends Event
 {
-    public const NAME = 'uvdesk.composer.project.created';
+    public const NAME = 'jacobn.composer.project.created';
 
     protected $event;
 
